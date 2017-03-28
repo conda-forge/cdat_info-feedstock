@@ -12,7 +12,7 @@ source:
 build:
   number: 0
   skip: True  # [win]
-  noarch_python: True
+  # noarch_python: True
 
 requirements:
   build:
