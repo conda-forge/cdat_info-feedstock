@@ -11,16 +11,15 @@ source:
 
 build:
   number: 0
-  skip: True  # [win]
-  # noarch_python: True
+  skip: True  # [win or py3k]
 
 requirements:
   build:
     - python
     - setuptools
-    - python <3 
+    - python
   run:
-    - python <3 
+    - python
 
 test:
   imports:
