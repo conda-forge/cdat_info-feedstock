@@ -7,10 +7,10 @@ package:
 
 source:
     url: https://github.com/UV-CDAT/uvcdat/archive/v2.10.tar.gz
-    sha256: cbe5f86af0a947b44a20ec15ab31089b71ebd328596ac5e283004f274d11856a
+    sha256: 0644c00feba2b070bba85a1ed0d057f0418695724c7f3f79503125faf7bfa511
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win or py3k]
 
 requirements:
