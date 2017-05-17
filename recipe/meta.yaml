@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-    url: https://github.com/UV-CDAT/uvcdat/archive/v2.10.tar.gz
-    sha256: 0644c00feba2b070bba85a1ed0d057f0418695724c7f3f79503125faf7bfa511
+    url: https://github.com/UV-CDAT/cdat_info/archive/2.10.tar.gz
+    sha256: dcd32606f3947bb89c2d035dd869e47588c269212ca8b9278026365dde01a05b
 
 build:
   number: 1
