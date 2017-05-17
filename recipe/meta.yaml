@@ -7,10 +7,10 @@ package:
 
 source:
     url: https://github.com/UV-CDAT/cdat_info/archive/2.10.tar.gz
-    sha256: dcd32606f3947bb89c2d035dd869e47588c269212ca8b9278026365dde01a05b
+    sha256: 4020c308b731cdd4e2395d80fe573726e0717288c134bf0c82d7b44ba86fc37c
 
 build:
-  number: 2
+  number: 3
   skip: True  # [win or py3k]
   script: python setup.py install
 
@@ -21,6 +21,7 @@ requirements:
     - python
   run:
     - python
+    - requests
 
 test:
   imports:
