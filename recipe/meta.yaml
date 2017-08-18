@@ -1,17 +1,17 @@
 {% set name = "cdat_info" %}
-{% set version = "2.10" %}
+{% set version = "2.12" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-    url: https://github.com/UV-CDAT/cdat_info/archive/2.10.tar.gz
-    sha256: 4020c308b731cdd4e2395d80fe573726e0717288c134bf0c82d7b44ba86fc37c
+    url: https://github.com/UV-CDAT/cdat_info/archive/2.12.tar.gz
+    sha256: 88747e289521a2a0185697f6f1c9d6e92d0dda7427519b23464e09afa9e5d2b6
 
 build:
-  number: 3
-  skip: True  # [win or py3k]
+  number: 0
+  skip: True  # [win]
   script: python setup.py install
 
 requirements:
