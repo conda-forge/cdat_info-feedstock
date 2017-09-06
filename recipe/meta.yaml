@@ -7,10 +7,10 @@ package:
 
 source:
     url: https://github.com/UV-CDAT/cdat_info/archive/2.12.tar.gz
-    sha256: 88747e289521a2a0185697f6f1c9d6e92d0dda7427519b23464e09afa9e5d2b6
+    sha256: 5a62668c39703315f8599002056d29c0fa8223c60ca9748631693c39383ce7b2
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win]
   script: python setup.py install
 
