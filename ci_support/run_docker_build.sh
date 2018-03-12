@@ -24,7 +24,6 @@ show_channel_urls: true
 CONDARC
 )
 
-rm -f "$FEEDSTOCK_ROOT/build_artefacts/conda-forge-build-done"
 
 cat << EOF | docker run -i \
                         -v "${RECIPE_ROOT}":/recipe_root \
