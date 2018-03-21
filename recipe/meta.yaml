@@ -1,5 +1,5 @@
 {% set name = "cdat_info" %}
-{% set version = "3.0" %}
+{% set version = "8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
     url: https://github.com/UV-CDAT/cdat_info/archive/master.tar.gz
-    sha256: 05c4343b8abb4ed967aed0d0ff60a29c57cb955b61b02eb66f5dd66e75d37b18
+    sha256: 4af70b1c05fe151c1c6a2ad78ddfca51963841518defc0ce11dd5d63007a3cf2
 
 build:
   number: 0
