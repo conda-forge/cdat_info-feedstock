@@ -1,13 +1,13 @@
 {% set name = "cdat_info" %}
-{% set version = "3.0" %}
+{% set version = "8.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-    url: https://github.com/UV-CDAT/cdat_info/archive/master.tar.gz
-    sha256: 05c4343b8abb4ed967aed0d0ff60a29c57cb955b61b02eb66f5dd66e75d37b18
+    url: https://github.com/UV-CDAT/cdat_info/archive/v8.0.tar.gz
+    sha256: 7dd59358f2086920f9ac16fe292d5cafda6e2b0c21c2b0761e21f36228c82fdd
 
 build:
   number: 0
@@ -28,7 +28,7 @@ test:
     - cdat_info
 
 about:
-  home:  http://uvcdat.llnl.gov
+  home:  http://cdat.llnl.gov
   license: CCLRC
   license_file: LEGAL.txt
   summary: 'Climate Data Analysis Tools'
@@ -36,7 +36,7 @@ about:
     is a powerful and complete front-end to a rich set of visual-data 
     exploration and analysis capabilities well suited for climate-data 
     analysis problems.
-  dev_url: http://github.com/UV-CDAT/cdms                                                                                                                    
+  dev_url: http://github.com/CDAT/cdat_info
 
 
 extra:
