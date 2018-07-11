@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-    url: https://github.com/UV-CDAT/cdat_info/archive/master.tar.gz
+    url: url: https://github.com/UV-CDAT/cdat_info/archive/v{{ version }}.tar.gz
     sha256: 4af70b1c05fe151c1c6a2ad78ddfca51963841518defc0ce11dd5d63007a3cf2
 
 build:
@@ -28,7 +28,7 @@ test:
     - cdat_info
 
 about:
-  home:  http://uvcdat.llnl.gov
+  home:  http://cdat.llnl.gov
   license: CCLRC
   license_file: LEGAL.txt
   summary: 'Climate Data Analysis Tools'
@@ -36,7 +36,7 @@ about:
     is a powerful and complete front-end to a rich set of visual-data 
     exploration and analysis capabilities well suited for climate-data 
     analysis problems.
-  dev_url: http://github.com/UV-CDAT/cdms                                                                                                                    
+  dev_url: http://github.com/CDAT/cdat_info
 
 
 extra:
