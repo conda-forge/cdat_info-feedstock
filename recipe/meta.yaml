@@ -1,24 +1,21 @@
-{% set name = "cdat_info" %}
 {% set version = "8.0" %}
 
 package:
-  name: {{ name|lower }}
+  name: cdat_info
   version: {{ version }}
 
 source:
-    url: https://github.com/UV-CDAT/cdat_info/archive/v8.0.tar.gz
+    url: https://github.com/UV-CDAT/cdat_info/archive/v{{ version }}.tar.gz
     sha256: 7dd59358f2086920f9ac16fe292d5cafda6e2b0c21c2b0761e21f36228c82fdd
 
 build:
   number: 0
-  skip: True  # [win]
-  script: python setup.py install
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
-    - python
+    - pip
   run:
     - python
     - requests
