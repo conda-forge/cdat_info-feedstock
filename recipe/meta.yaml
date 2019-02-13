@@ -9,7 +9,7 @@ source:
     sha256: 7dd59358f2086920f9ac16fe292d5cafda6e2b0c21c2b0761e21f36228c82fdd
 
 build:
-  number: 1001
+  number: 1002
   skip: True  # [win]
   script: python -m pip install --no-deps --ignore-installed .
 
@@ -20,6 +20,7 @@ requirements:
   run:
     - python
     - requests
+    - openssl >1.1
 
 test:
   imports:
