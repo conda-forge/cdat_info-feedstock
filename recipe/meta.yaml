@@ -1,4 +1,4 @@
-{% set version = "8.0" %}
+{% set version = "8.1" %}
 
 package:
   name: cdat_info
@@ -6,11 +6,11 @@ package:
 
 source:
     url: https://github.com/UV-CDAT/cdat_info/archive/v{{ version }}.tar.gz
-    sha256: 7dd59358f2086920f9ac16fe292d5cafda6e2b0c21c2b0761e21f36228c82fdd
+    sha256: 1bac6939f6921f228a57d0e8f167b4451b6504c3d84eb8801e2ddbcb1ad37b1b
 
 build:
-  number: 1002
-  skip: True  # [win]
+  number: 0
+  noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
@@ -20,6 +20,7 @@ requirements:
   run:
     - python
     - requests
+    - nbformats
     - openssl >1.1
 
 test:
@@ -28,15 +29,14 @@ test:
 
 about:
   home:  http://cdat.llnl.gov
-  license: CCLRC
-  license_file: LEGAL.txt
+  license: BSD
+  license_file: bsd-3-clause.txt
   summary: 'Climate Data Analysis Tools'
   description: |                                                                                                                                             
     is a powerful and complete front-end to a rich set of visual-data 
     exploration and analysis capabilities well suited for climate-data 
     analysis problems.
   dev_url: http://github.com/CDAT/cdat_info
-
 
 extra:
   recipe-maintainers:
