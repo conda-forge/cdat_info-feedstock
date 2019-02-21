@@ -1,4 +1,4 @@
-{% set version = "8.1" %}
+{% set version = "8.1.1" %}
 
 package:
   name: cdat_info
@@ -9,7 +9,7 @@ source:
     sha256: 1bac6939f6921f228a57d0e8f167b4451b6504c3d84eb8801e2ddbcb1ad37b1b
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
@@ -21,7 +21,6 @@ requirements:
     - python
     - requests
     - nbformat
-    - openssl
 
 test:
   imports:
