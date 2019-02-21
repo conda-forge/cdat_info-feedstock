@@ -1,11 +1,12 @@
 {% set version = "8.1.1" %}
+{% set actual_version = "8.1" %}
 
 package:
   name: cdat_info
   version: {{ version }}
 
 source:
-    url: https://github.com/UV-CDAT/cdat_info/archive/v{{ version }}.tar.gz
+    url: https://github.com/UV-CDAT/cdat_info/archive/v{{ actual_version }}.tar.gz
     sha256: 1bac6939f6921f228a57d0e8f167b4451b6504c3d84eb8801e2ddbcb1ad37b1b
 
 build:
