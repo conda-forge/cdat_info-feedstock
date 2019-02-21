@@ -7,7 +7,7 @@ About cdat_info
 
 Home: http://cdat.llnl.gov
 
-Package license: CCLRC
+Package license: BSD
 
 Feedstock license: BSD 3-Clause
 
@@ -21,9 +21,8 @@ analysis problems.
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/cdat_info-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/cdat_info-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/cdat_info-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/cdat_info-feedstock)
-![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/cdat_info-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/cdat_info-feedstock)
 
 Current release info
 ====================
