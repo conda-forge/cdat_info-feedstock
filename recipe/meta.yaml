@@ -20,7 +20,7 @@ requirements:
   run:
     - python
     - requests
-    - nbformats
+    - nbformat
     - openssl >1.1
 
 test:
