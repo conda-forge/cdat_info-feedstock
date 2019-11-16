@@ -10,12 +10,12 @@ source:
     sha256: 2bcac2498a9e892793a9461e96f2736adb41500e0e371ea1f0a5bb9b659d686a
 
 build:
-  number: 3
+  number: 4
   noarch: python
   script: python setup.py install
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
   run:
@@ -46,3 +46,4 @@ extra:
     - muryanto1
     - downiec
     - jasonb5
+    - xylar
