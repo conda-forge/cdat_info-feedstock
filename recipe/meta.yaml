@@ -10,15 +10,14 @@ source:
     sha256: 2bcac2498a9e892793a9461e96f2736adb41500e0e371ea1f0a5bb9b659d686a
 
 build:
-  number: 4
+  number: 5
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: python setup.py install
 
 requirements:
   host:
     - python
     - setuptools
-    - pip
   run:
     - python
     - requests
@@ -28,8 +27,6 @@ requirements:
 test:
   imports:
     - cdat_info
-  commands:
-    - test -f $PREFIX/share/cdat/cdat_runtests.json
 
 about:
   home:  http://cdat.llnl.gov
