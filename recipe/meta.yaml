@@ -7,10 +7,10 @@ package:
 
 source:
     url: https://github.com/CDAT/cdat_info/archive/v{{ actual_version }}.tar.gz
-    sha256: 81b3d68d98ba03e9a3ce72367432c21b4fbb9497be13d12d901e16e24b656ad7
+    sha256: 57b97ca706b89cd7805aa9fbbbddf557cfdaff06004f09ebbef243b302a60a91
 
 build:
-  number: 6
+  number: 7
   noarch: python
   script: python setup.py install
 
