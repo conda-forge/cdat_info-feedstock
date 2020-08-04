@@ -5,7 +5,7 @@ Home: http://cdat.llnl.gov
 
 Package license: BSD
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Climate Data Analysis Tools
 
