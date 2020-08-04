@@ -1,5 +1,5 @@
-{% set version = "8.2" %}
-{% set actual_version = "8.2" %}
+{% set version = "8.2.1" %}
+{% set actual_version = "8.2.1" %}
 
 package:
   name: cdat_info
@@ -7,10 +7,10 @@ package:
 
 source:
     url: https://github.com/CDAT/cdat_info/archive/v{{ actual_version }}.tar.gz
-    sha256: 57b97ca706b89cd7805aa9fbbbddf557cfdaff06004f09ebbef243b302a60a91
+    sha256: 173a91d1dc68d1b3c96230d1c9fc0fa9304a463a5da5015830eb35e2823e3c9b
 
 build:
-  number: 7
+  number: 0
   noarch: python
   script: python setup.py install
 
