@@ -8,9 +8,11 @@ package:
 source:
     url: https://github.com/CDAT/cdat_info/archive/v{{ actual_version }}.tar.gz
     sha256: 173a91d1dc68d1b3c96230d1c9fc0fa9304a463a5da5015830eb35e2823e3c9b
+    patches:
+      - 0001-fix_version_8_2_1.patch
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: python setup.py install
 
