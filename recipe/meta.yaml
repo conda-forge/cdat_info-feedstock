@@ -12,16 +12,16 @@ source:
       - 0001-fix_version_8_2_1.patch
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: python setup.py install
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - setuptools
   run:
-    - python
+    - python >=3.6
     - requests
     - nbformat
     - openssl >1.1
@@ -45,7 +45,6 @@ extra:
   recipe-maintainers:
     - dnadeau4
     - doutriaux1
-    - muryanto1
     - downiec
     - jasonb5
     - xylar
