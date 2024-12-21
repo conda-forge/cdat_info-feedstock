@@ -12,21 +12,23 @@ source:
       - 0001-fix_version_8_2_1.patch
 
 build:
-  number: 2
+  number: 3
   noarch: python
-  script: python setup.py install
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - requests
     - nbformat
     - openssl >1.1
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - cdat_info
 
