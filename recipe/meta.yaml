@@ -14,7 +14,7 @@ source:
 build:
   number: 3
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: python setup.py install
 
 requirements:
   host:
@@ -29,8 +29,11 @@ requirements:
 test:
   requires:
     - python {{ python_min }}
+    - pip
   imports:
     - cdat_info
+  command:
+    - pip check
 
 about:
   home:  http://cdat.llnl.gov
